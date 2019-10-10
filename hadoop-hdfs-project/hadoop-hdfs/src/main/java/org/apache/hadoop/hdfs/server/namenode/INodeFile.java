@@ -344,6 +344,7 @@ public class INodeFile extends INodeWithAdditionalFields
     assertAllBlocksComplete(numCommittedAllowed, minReplication);
     removeFeature(uc);
     setModificationTime(mtime);
+    setAccessTime(mtime);
   }
 
   /** Assert all blocks are complete. */
